@@ -34,6 +34,8 @@ export interface ConfigurationFileInterface {
     disableLifeCycleHooks: boolean;
     disableRoutesGraph: boolean;
     disableSearch: boolean;
+    disableOverviewSection: boolean;
+    disableDependenciesSection: boolean;
     minimal: boolean;
     customFavicon: string;
     customLogo: string;

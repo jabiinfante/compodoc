@@ -52,6 +52,8 @@ export interface MainDataInterface {
     disableLifeCycleHooks: boolean;
     disableRoutesGraph: boolean;
     disableSearch: boolean;
+    disableOverviewSection: boolean;
+    disableDependenciesSection: boolean;
     watch: boolean;
     mainGraph: string;
     coverageTest: boolean;

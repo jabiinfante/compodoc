@@ -163,6 +163,16 @@ Note: Certain tabs will only be shown if applicable to a given dependency`,
             )
             .option('--disableSearch', 'Do not add the search input', false)
             .option(
+                '--disableOverviewSection',
+                'Do not add overview link on "Getting Started" section',
+                false
+            )
+            .option(
+                '--disableDependenciesSection',
+                'Do not add Dependencies link on "Getting Started" section',
+                false
+            )
+            .option(
                 '--minimal',
                 'Minimal mode with only documentation. No search, no graph, no coverage.',
                 false
@@ -471,6 +481,22 @@ Note: Certain tabs will only be shown if applicable to a given dependency`,
         }
         if (program.disableSearch) {
             Configuration.mainData.disableSearch = program.disableSearch;
+        }
+
+        if (configFile.disableOverviewSection) {
+            Configuration.mainData.disableOverviewSection = configFile.disableOverviewSection;
+        }
+        if (program.disableOverviewSection) {
+            Configuration.mainData.disableOverviewSection = program.disableOverviewSection;
+        }
+
+        if (configFile.disableDependenciesSection) {
+            Configuration.mainData.disableDependenciesSection =
+                configFile.disableDependenciesSection;
+        }
+        if (program.disableDependenciesSection) {
+            Configuration.mainData.disableDependenciesSection =
+                program.disadisableDependenciesSectionbleOverviewSection;
         }
 
         if (configFile.minimal) {
